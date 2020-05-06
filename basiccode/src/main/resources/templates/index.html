@@ -1,0 +1,127 @@
+<!DOCTYPE html >
+
+<html>
+	 <head>
+        <title>TODO supply a title</title>
+
+        <meta charset="UTF-8" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- newer version of bootstrap -->
+
+        <link rel="stylesheet" type="text/css" href="bootCSS/bootstrap.min.css" />
+
+        <link rel="stylesheet" type="text/css" href="bootCSS/bootstrap.css" />
+        
+        <!-- Old Version Of Bootstrap   -->
+        <!-- my styles -->
+        <!-- <link rel="stylesheet" href="css/web_styles.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" /> -->
+        
+        <script src="js/angular.js"></script>
+        <script src="js/angular-route.js"></script>
+        <script src="js/angular-route-min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script>
+            window.onload.reload(true);
+        </script>
+     </head>
+     <body>
+     	<nav class="navbar bg-dark">
+            <div class="container">
+
+                <ul class="nav navbar-nav navbar-left">
+
+                    <a ng-click="goto('/');">
+                        <img src="images/Basiccode_logo.jpg" width="182" height="120" alt="logo"/>
+                    </a>
+
+                </ul >
+                
+                <ul id="navLI" class="nav navbar-nav navbar-right" style="width:70%;">
+                	<li class="navLI">
+                        &nbsp;<button ng-click="goto('/cart');" class="dropbtn " id="cartIcon" ><span class="glyphicon glyphicon-shopping-cart"></span> &nbsp;Subscribe</button>
+                    </li>
+                </ul>
+                
+                 <li class="smallLine">
+                       <p >
+                        	<a  ng-if="loginStatus === null" ng-click="goto('/login');" >Login</a>
+                            <a  ng-if="loginStatus !== null" ng-click="logout('/logout')">Logout</a>
+                       </p>
+                  </li>
+                  
+                  
+                      
+                <!--<ul id="navLI" class="nav navbar-nav navbar-right" style="width:70%;">
+                    <li class="navLI">
+                        &nbsp;<button ng-click="goto('/cart');" class="dropbtn " id="cartIcon" ><span class="glyphicon glyphicon-shopping-cart"></span> &nbsp;{{cart.length}}</button>
+                    </li>
+                    <li class="smallLine " >
+                        <div class="dropdown">
+                            <button class="myAccountDropDown" >My Account<span class="caret"></span></button>
+                            <div class="dropdown-content">
+                                <a ng-click="manageAccount('M');" >Update My Account</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="smallLine">
+                        <p ><a  ng-if="loginStatus === null" ng-click="goto('/login');" >Login</a>
+                            <a ng-click="logout('/logout')" ng-if="loginStatus !== null">Logout</a></p>
+                    </li>
+                    <li class="smallLine ">
+                        <p > <span ng-if=" loginStatus !== null">{{loginStatus}}</span>
+                            <span ng-if="loginStatus === null">Hi!</span></p>
+                    </li>   
+                </ul>-->
+
+            </div>
+
+            <!--<div class="blueLine">
+                <div class="container" >
+                    <div class="nav navbar-nav navbar-left">
+                        <div class="mainDrop">
+                            <button  class="dropbtn" >Shop By Category<span class="caret"></span></button>
+                            <div class="mainDrop-content">
+
+                                <a ng-click="loadCategory('Cameras');">Cameras</a>
+                                <a ng-click="loadCategory('Computers');">Computers</a>
+                                <a ng-click="loadCategory('Cellphones');">Cellphones</a>
+                                <a ng-click="loadCategory('Books');">Books</a>
+                                <a ng-click="loadCategory('Sport');">Sport</a>
+                                <a ng-click="loadCategory('Music');">Music</a>
+                                <a ng-click="loadCategory('books');"><img src="images/dailydeals_flat.gif" width="175" height="25" alt="dailydeals_flat"/></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <ul class="nav navbar-nav navbar-right" style="width:80%;">
+                        <li style="width: 23%;margin-right: 0.5%;">
+                            <select class="form-control" id="sel1">
+                                <option>Search All Category</option>
+                                <option>Cameras</option>
+                                <option>Computers</option>
+                                <option>Books</option>
+                                <option>Sport</option>
+                                <option>Music</option>
+                            </select>
+                        </li>
+                        <li style="width: 75%;">
+                            <div class="input-group">
+
+                                <input style="width: 100%;" type="text" class="form-control" aria-describedby="search-query"/>
+                                <span class="input-group-addon" id="search-query"><span class="glyphicon glyphicon-search"></span></span>
+
+                            </div>
+                        </li>       
+
+                    </ul>
+
+                </div>
+            </div>-->
+        </nav>
+     </body>
+</html>

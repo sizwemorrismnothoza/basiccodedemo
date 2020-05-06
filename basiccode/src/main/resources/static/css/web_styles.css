@@ -1,0 +1,324 @@
+@charset "ISO-8859-1";
+
+
+.blueLine{
+    background-color: #1d78cb;
+    height:70px;
+    margin-top: 1%;
+    padding: 0.5%
+}
+.smallLine{
+    border-right: solid #9d9d9d 1px;
+    text-align: center;
+    height: 25px;
+    
+}
+#navLI li{
+    width: 15%;
+    float: right;
+}
+.header{
+    float: top;
+    min-height: 150px;	
+	}
+.header-top {
+    padding-top: 2%;
+    padding-bottom: 0.2%;
+    min-height: 50px;
+    width: 100%;
+    margin: auto;
+    
+    
+}
+.header-bottom {
+    background-color: #1d78cb;
+    min-height: 110px;
+    width: 100%;
+}
+
+
+.categoryList{ }
+
+.categoryList ul{
+    list-style-type: none;
+    width: 83%;
+    margin-left: 2%;
+}
+.categoryList li{
+    min-height: 25px;
+    background-color: #f9f9f9;
+    padding: 2%;
+}
+
+.categoryList li:hover  {
+    display: block;
+    background-color: #d4d4d4;
+}
+#catHeading{
+    background-color: black;
+    color: white;
+    font-size: 16px;
+}
+
+/*---------------------------------------------------------------*/
+.mainDrop{
+    position: relative;
+    display: inline-block;
+    width: 18%;
+}
+
+.mainDrop-content {
+
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.mainDrop-content a {
+    color: #1d78cb;
+    padding: 1% 2%;
+    text-decoration: none;
+    display: block;
+}
+.mainDrop-content a:hover {background-color: #f1f1f1}
+
+.mainDrop:hover .mainDrop-content {
+    display: block;
+}
+/*---------------------------------------------------------------*/
+.myAccountDropDown{
+    cursor: pointer;   
+    border: none;
+    background-color: whitesmoke
+}
+
+#cartIcon{
+    width: 82%;
+    border: none;
+    background-color: #67ae73;
+    height: 35px;
+}
+.dropbtn {
+    cursor: pointer;
+    height: 30px;
+    width: 182px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border: none;
+     
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #1d78cb;
+    padding: 1% 2%;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+
+    color: #1d78cb;
+}
+
+#searchBox{
+    width: 40%;
+
+}
+
+ a:hover{
+	cursor: pointer;
+}
+
+.tableRow{
+/*	margin-bottom: 50%;*/
+        margin-top: 10px;
+}
+.tableColumn{
+    width: 250px;
+}
+
+.hrStyles{
+	border-bottom: solid #9d9d9d 1px;
+        width: 100%
+}
+
+.tbb{
+    border: none;
+}
+.tbb tr{
+   border-bottom: #000000 solid 2px ;
+   padding: 15%;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+
+
+.categoryList {  }
+
+.categoryList ul{list-style-type: none;}
+.categoryList li{
+    min-height: 25px;
+    background-color: #f9f9f9;
+    
+}
+#catHeading{
+    background-color: black;
+    color: white;
+    font-size: 16px;
+}
+.categoryList li:hover  {
+    display: block;
+    background-color: #d4d4d4;
+}
+
+/*---------------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------------------*/
+.cartTable{padding-top:2%; }
+
+.cartTable table{width: 100%;border: none;}
+
+/*--------------------------------- FOOTER -----------------------------------------*/
+
+.footer{
+   float: end;
+    height:51px;
+    background:#ebebeb;
+    white-space:nowrap;
+    line-height:50px;
+    padding:0 15px;
+    color:#7b7b7b; 
+    margin-top:10px;
+    width: 100%;
+   
+}
+.footer a{ 
+    color:#7b7b7b;
+    text-decoration: none;}
+.footer a:hover{ color:#000;}
+.footer span{ padding:0 2px;}
+
+.right{
+    float:right; 
+    display:inline; 
+}
+/*-----------------------------------------Manage Profile-------------------------------*/
+
+
+.sideBar_button{
+    width: 80%;
+    margin: 1%;
+    float: right;
+    
+}
+/*#sideba { margin-top: 0.8%; width:100%;}*/
+#sidebar {  margin-top: 0.8%; width:15%;}
+/*-----------------------------------------Cart CSS-------------------------------------*/
+
+
+.cart_quantity_button a {
+  background:#F0F0E9;
+  color: #696763;
+  display: inline-block;
+  font-size: 16px;
+  height: 28px;
+  overflow: hidden;
+  text-align: center;
+  width: 35px;
+  float: left;
+}
+
+
+.cart_quantity_input {
+  color: #696763;
+  float: left;
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Roboto',sans-serif;
+  
+}
+
+
+.cart_delete  {
+  display: block;
+  margin-right: -12px;
+  overflow: hidden;
+}
+
+
+.cart_delete a {
+  background:#F0F0E9;
+  color: #FFFFFF;
+  padding: 5px 7px;
+  font-size: 16px
+}
+
+.cart_delete a:hover {
+  background:#FE980F
+}
+/*-------------------------------------- Admin Page------------------------------------*/
+
+.leftSideBar{
+    float: left;
+    width: 80%;
+    background-color: whitesmoke;
+    min-height: 60px;
+    
+}
+
+.leftSideBar ul{
+    list-style-type: none;
+}
+.leftSideBar li{
+    padding: 1%;
+    float: left;
+    width: 25%;
+}
+.rightSideBar{
+    float: right;
+    width: 20%;
+}
+
+/*----------------------------------------------------------------------------*/
+
+.forgotPasswordUI{
+    width: 60%;
+    background-color:#d4d4d4;
+    border: solid #1d78cb 1px;
+    margin: auto;
+    padding: 4%;
+}
+
+
+/*----------------------------------------------------------------------------*/
+
+.homePageProducts{
+    
+}
+
+
+.categories{}
+
+.categories .li{float: left;margin: 0.5%;border: solid #9d9d9d 1px;padding: 0.5%;}
